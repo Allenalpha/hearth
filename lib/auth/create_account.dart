@@ -7,13 +7,23 @@ import 'package:hearth/utils/text_style.dart';
 class CreateAccountScreen extends StatefulWidget {
   const CreateAccountScreen({super.key});
 
+
   @override
   State<CreateAccountScreen> createState() => _CreateAccountScreenState();
 }
 
 class _CreateAccountScreenState extends State<CreateAccountScreen> {
-  @override
+
+
+      @override
   Widget build(BuildContext context) {
+    final inputBorder = OutlineInputBorder(
+      borderRadius: BorderRadius.circular(12),
+      borderSide: BorderSide(color: Colors.grey),
+    );
+
+
+
     return Scaffold(
       backgroundColor: lightPrimary,
       body: SafeArea(
@@ -137,13 +147,7 @@ class _CreateAccountScreenState extends State<CreateAccountScreen> {
             ],
           ),
         ),
-      ),
-
-
-
-
-      
+      ), 
     );  
-    
   }
 }
