@@ -6,15 +6,66 @@ import 'package:hearth/utils/colors.dart';
 TextStyle HeaderText = GoogleFonts.inter(
   fontSize: 28,
   fontWeight: FontWeight.w600,
+  color: Color(0xff0E180E) ,
+);
+
+TextStyle Header2Text = GoogleFonts.inter(
+  fontSize: 14,
+  fontWeight: FontWeight.w400,
+  color: Color(0xff6A6A6A) ,
+);
+
+TextStyle HintText = GoogleFonts.inter(
+  fontSize: 14,
+  fontWeight: FontWeight.w400,
   color: Color(0xff000000) ,
 );
 
-TextStyle s20SBoldDark = GoogleFonts.inter(
-  fontWeight: FontWeight.w600,
-  color: textDark,
-  fontSize: 20,
-  height: 1.0,
+
+TextStyle LabelText = GoogleFonts.inter(
+  fontSize: 14,
+  fontWeight: FontWeight.w400,
+  color: Color(0xff6A6A6A) ,
 );
+
+
+TextStyle ButtonText = GoogleFonts.inter(
+  fontSize: 14,
+  fontWeight: FontWeight.w500,
+  color: Color(0xffffffff) ,
+);
+
+TextStyle Button2Text = GoogleFonts.inter(
+  fontSize: 14,
+  fontWeight: FontWeight.w500,
+  color: Color(0xff0E180E) ,
+);
+
+TextStyle ErrorText = GoogleFonts.inter(
+  fontSize: 13,
+  fontWeight: FontWeight.w400,
+  color: Color(0xffE33629) ,
+);
+
+TextStyle BodyText = GoogleFonts.inter(
+  fontWeight: FontWeight.w400,
+  fontSize: 13,
+  color: Color(0xff000000),
+);
+
+TextStyle s16RegGrey = GoogleFonts.inter(
+  fontWeight: FontWeight.w400,
+  fontSize: 13,
+  color: Color(0xff000000),
+);
+
+
+
+
+
+
+
+
 
 TextStyle s16RegGrey = GoogleFonts.inter(
   fontWeight: FontWeight.w400,
