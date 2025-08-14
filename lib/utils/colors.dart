@@ -4,6 +4,8 @@ const Color appGrey = Color(0xff6A6A6A);
 
 const Color primaryColor = Color(0xff358438);
 
+const Color darkPrimary = Color(0xff0E180E);
+
 const Color lightPrimary = Color(0xffF3FAF3);
 
 const Color ratingColor = Color(0xffFACC15);

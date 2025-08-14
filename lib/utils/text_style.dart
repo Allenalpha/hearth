@@ -3,6 +3,12 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:hearth/utils/colors.dart';
 
 
+TextStyle HeaderText = GoogleFonts.inter(
+  fontSize: 28,
+  fontWeight: FontWeight.w600,
+  color: Color(0xff000000) ,
+);
+
 TextStyle s20SBoldDark = GoogleFonts.inter(
   fontWeight: FontWeight.w600,
   color: textDark,
