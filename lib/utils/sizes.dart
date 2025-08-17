@@ -1,4 +1,4 @@
-double allRoundPadding = 25.0;
+double allRoundPadding = 16.0;
 
 double smallBtwnElements = 8.0;
 

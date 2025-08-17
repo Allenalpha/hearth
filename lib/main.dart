@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hearth/auth/onboarding/intro.dart';
 import 'package:hearth/utils/themes.dart';
 
 
@@ -13,6 +14,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: IntroScreen(),
       title: 'Flutter Demo',
       themeMode: ThemeMode.system,
       theme: myAppTheme.myThemes,

@@ -2,211 +2,129 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hearth/utils/colors.dart';
 
-
-TextStyle s20SBoldDark = GoogleFonts.inter(
-  fontWeight: FontWeight.w600,
-  color: textDark,
-  fontSize: 20,
-  height: 1.0,
-);
-
-TextStyle s16RegGrey = GoogleFonts.inter(
-  fontWeight: FontWeight.w400,
-  fontSize: 16,
-  color: appGrey,
-);
-
-TextStyle heading4 = GoogleFonts.inter(
-  fontWeight: FontWeight.w600,
-  fontSize: 28,
-  color: textDark,
-);
-
-TextStyle body2 = GoogleFonts.dmSans(
-  fontWeight: FontWeight.w400,
-  fontSize: 16,
-  color: textSecondary,
-  height: 1.5,
-);
-
-TextStyle f20w600Black = GoogleFonts.inter(
-  fontSize: 20,
-  fontWeight: FontWeight.w600,
-  color: Colors.black,
-);
-
-TextStyle inputText = GoogleFonts.inter(
-  fontSize: 18,
-  fontWeight: FontWeight.w600,
-  color: secondaryGrey,
-);
-
-TextStyle f20w400Primary = GoogleFonts.inter(
-  fontSize: 24,
-  fontWeight: FontWeight.w600,
-  color: textPrimary,
-);
-
-TextStyle onboardingC = GoogleFonts.inter(
-  fontSize: 14,
-  fontWeight: FontWeight.w500,
-  color: onboardingColor,
-);
-
-TextStyle headingText = GoogleFonts.inter(
-  fontSize: 14,
-  fontWeight: FontWeight.w500,
-  color: textSecondary,
-);
-
-TextStyle labelText = GoogleFonts.inter(
-  fontSize: 14,
-  fontWeight: FontWeight.w500,
-  color: labelColor,
-);
-
-TextStyle ModalText = GoogleFonts.inter(
-  fontSize: 14,
-  fontWeight: FontWeight.w500,
-  color: lightblue,
-);
-
-TextStyle Modal2Text = GoogleFonts.inter(
-  fontSize: 14,
-  fontWeight: FontWeight.w400,
-  color: textSecondary,
-);
-
-TextStyle Modal3Text = GoogleFonts.inter(
-  fontSize: 14,
-  fontWeight: FontWeight.w500,
-  color: Colors.white ,
-);
-
-TextStyle Modal4Text = GoogleFonts.inter(
-  fontSize: 12,
-  fontWeight: FontWeight.w400,
-  color: Color(0xff131215) ,
-
-);
-
-TextStyle BottomText = GoogleFonts.inter(
-  fontSize: 12,
-  fontWeight: FontWeight.w400,
-  color: textSecondary,
-
-);
-
-TextStyle Modal5Text = GoogleFonts.inter(
-  fontSize: 12,
-  fontWeight: FontWeight.w400,
-  color: lightgrey ,
-);
-
-TextStyle Modal6Text = GoogleFonts.inter(
-  fontSize: 16,
-  fontWeight: FontWeight.w500,
-  color: Colors.black ,
-);
-
-TextStyle Modal7Text = GoogleFonts.inter(
-  fontSize: 14,
-  fontWeight: FontWeight.w500,
-  color: modalBlack ,
-);
-
-TextStyle Modal8Text = GoogleFonts.inter(
-  fontSize: 12,
-  fontWeight: FontWeight.w400,
-  color: textPrimary ,
-);
-
-TextStyle Modal9Text = GoogleFonts.inter(
-  fontSize: 14,
-  fontWeight: FontWeight.w500,
-  color: darkest ,
-);
-
-TextStyle Modal10Text = GoogleFonts.inter(
-  fontSize: 14,
-  fontWeight: FontWeight.w500,
-  color: textDark ,
-);
-
-TextStyle ToggleText = GoogleFonts.inter(
-  fontSize: 14,
-  fontWeight: FontWeight.w500,
-  color: toggleAsh ,
-);
-
-TextStyle searchText = GoogleFonts.inter(
-  fontSize: 14,
-  fontWeight: FontWeight.w400,
-  color: toggleAsh ,
-);
-
-TextStyle TermsText = GoogleFonts.inter(
-  fontSize: 16,
-  fontWeight: FontWeight.w600,
-  color: Color(0xff000000) ,
-);
-
-TextStyle LightText = GoogleFonts.inter(
-  fontSize: 10,
-  fontWeight: FontWeight.w400,
-  color: Color(0xff000000) ,
-);
-
-
-TextStyle RulesText = GoogleFonts.inter(
-  fontSize: 11,
-  fontWeight: FontWeight.w400,
-  color: Color(0xff1E1E1E) ,
-);
-
-
-TextStyle NumberText = GoogleFonts.inter(
-  fontSize: 12,
-  fontWeight: FontWeight.w700,
-  color: Color(0xff1E1E1E) ,
-);
-
 TextStyle HeaderText = GoogleFonts.inter(
-  fontSize: 14,
+  fontSize: 28,
   fontWeight: FontWeight.w600,
-  color: Color(0xff000000) ,
+  color: Color(0xff0E180E) ,
 );
 
-TextStyle DashText = GoogleFonts.inter(
-  fontSize: 10,
+TextStyle Header2Text = GoogleFonts.inter(
+  fontSize: 14,
+  fontWeight: FontWeight.w400,
+  color: Color(0xff6A6A6A) ,
+);
+
+TextStyle HintText = GoogleFonts.inter(
+  fontSize: 14,
   fontWeight: FontWeight.w400,
   color: Color(0xff000000) ,
 );
 
 
-TextStyle DashTwoText = GoogleFonts.inter(
-  fontSize: 10,
-  fontWeight: FontWeight.w500,
-  color: Color(0xff000000) ,
+TextStyle LabelText = GoogleFonts.inter(
+  fontSize: 14,
+  fontWeight: FontWeight.w400,
+  color: Color(0xff6A6A6A) ,
 );
 
-TextStyle DashThreeText = GoogleFonts.inter(
+
+TextStyle ButtonText = GoogleFonts.inter(
+  fontSize: 14,
+  fontWeight: FontWeight.w500,
+  color: Color(0xffffffff) ,
+);
+
+TextStyle Button2Text = GoogleFonts.inter(
+  fontSize: 14,
+  fontWeight: FontWeight.w500,
+  color: Color(0xff0E180E) ,
+);
+
+TextStyle ErrorText = GoogleFonts.inter(
   fontSize: 13,
-  fontWeight: FontWeight.w500,
-  color: Color(0xff000000) ,
+  fontWeight: FontWeight.w400,
+  color: Color(0xffE33629) ,
 );
 
-TextStyle DashFourText = GoogleFonts.inter(
-  fontSize: 18,
+TextStyle BodyText = GoogleFonts.inter(
+  fontWeight: FontWeight.w400,
+  fontSize: 13,
+  color: Color(0xff000000),
+);
+
+TextStyle TagText = GoogleFonts.inter(
+  fontWeight: FontWeight.w400,
+  fontSize: 11,
+  color: Color(0xff000000),
+);
+
+TextStyle Body2Text = GoogleFonts.inter(
+  fontWeight: FontWeight.w600,
+  fontSize: 13,
+  color: Color(0xff000000),
+);
+
+TextStyle Body3Text = GoogleFonts.inter(
+  fontWeight: FontWeight.w600,
+  fontSize: 13,
+  color: primaryColor,
+);
+
+TextStyle Body4Text = GoogleFonts.inter(
+  fontWeight: FontWeight.w600,
+  fontSize: 13,
+  color: Color(0xff7d7d7d7d),
+);
+
+TextStyle Body5Text = GoogleFonts.inter(
+  fontWeight: FontWeight.w500,
+  fontSize: 12,
+  color: primaryColor,
+);
+
+TextStyle Body6Text = GoogleFonts.inter(
+  fontWeight: FontWeight.w500,
+  fontSize: 12,
+  color: Color(0xff7d7d7d),
+);
+
+TextStyle Body7Text = GoogleFonts.inter(
+  fontWeight: FontWeight.w500,
+  fontSize: 10,
+  color: Color(0xff7d7d7d),
+);
+
+TextStyle Body8Text = GoogleFonts.inter(
+  fontSize: 11,
+  fontWeight: FontWeight.w700,
+  color: primaryColor ,
+);
+
+
+TextStyle Body9Text = GoogleFonts.inter(
+  fontSize: 11,
+  fontWeight: FontWeight.w500,
+  color: primaryColor ,
+);
+
+TextStyle Body10Text = GoogleFonts.inter(
+  fontSize: 11,
   fontWeight: FontWeight.w600,
   color: primaryColor ,
 );
 
-TextStyle DashFiveText = GoogleFonts.inter(
-  fontSize: 24,
-  fontWeight: FontWeight.w500,
-  color: primaryColor ,
+TextStyle Body11Text = GoogleFonts.inter(
+  fontSize: 14,
+  fontWeight: FontWeight.w600,
+  color: Color(0xffffffff) ,
 );
+
+TextStyle Body12Text = GoogleFonts.inter(
+  fontSize: 64,
+  fontWeight: FontWeight.w900,
+  color: Color(0xffffffff) ,
+);
+
 
 
 

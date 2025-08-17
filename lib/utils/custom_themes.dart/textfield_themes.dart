@@ -28,7 +28,7 @@ class MyTextFieldTheme {
     enabledBorder: const OutlineInputBorder().copyWith(
       borderSide: const BorderSide(
         width: 1,
-        color: borders,
+        color: strokeColor,
       ),
       borderRadius: BorderRadius.circular(16.0),
     ),

@@ -12,16 +12,28 @@ class IntroScreen extends StatefulWidget {
   State<IntroScreen> createState() => _IntroScreenState();
 }
 
+// class _IntroScreenState extends State<IntroScreen> {
+//   @override
+//   void initState() {
+//     super.initState();
+//     onBoard();
+//   }
+
+//   void onBoard() async {
+//     await Future.delayed(const Duration(seconds: 3), () {
+//       Get.offAll(() =>  OnboardingScreen());
+//     });
+//   }
 class _IntroScreenState extends State<IntroScreen> {
   @override
   void initState() {
     super.initState();
-    onBoard();
-  }
-
-  void onBoard() async {
-    await Future.delayed(const Duration(seconds: 3), () {
-      Get.offAll(() =>  OnboardingScreen());
+    // Navigate after 3 seconds
+    Future.delayed(const Duration(seconds: 3), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => OnboardingScreen()),
+      );
     });
   }
 
