@@ -9,7 +9,7 @@ class MyOutlineButtonTheme {
   static final myOutlineButtonTheme = OutlinedButtonThemeData(
     style: OutlinedButton.styleFrom(
       side: const BorderSide(
-        color: borders,
+        color: strokeColor,
         width: 1,
       ),
       shape: RoundedRectangleBorder(

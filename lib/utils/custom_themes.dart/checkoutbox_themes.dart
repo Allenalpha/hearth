@@ -6,7 +6,7 @@ class MyCheckboxTheme {
   MyCheckboxTheme._();
 
   static CheckboxThemeData checkBoxTheme = CheckboxThemeData(
-    side: const BorderSide(color: borders, width: 1.5),
+    side: const BorderSide(color: strokeColor, width: 1.5),
     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(4)),
     checkColor: WidgetStateProperty.resolveWith((states) {
       if (states.contains(WidgetState.selected)) {
