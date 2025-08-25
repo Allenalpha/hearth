@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-
-import 'package:hearth/auth/onboarding/intro.dart';
-
-import 'package:hearth/ui/onboarding/intro.dart' hide IntroScreen;
-
+import 'package:hearth/ui/onboarding/intro.dart';
 import 'package:hearth/utils/themes.dart';
 
 

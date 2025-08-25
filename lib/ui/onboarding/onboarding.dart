@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hearth/ui/onboarding/login.dart';
-import 'package:hearth/ui/onboarding/signin.dart';
+import 'package:hearth/ui/auth/login.dart';
+import 'package:hearth/ui/auth/signin.dart';
 import 'package:hearth/utils/custom_themes.dart/constants.dart';
 import 'package:hearth/utils/text_style.dart';
 

@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-import 'package:hearth/ui/onboarding/login.dart';
-import 'package:hearth/ui/onboarding/verification.dart';
+import 'package:hearth/ui/auth/forgot_password.dart';
+import 'package:hearth/ui/auth/signin.dart';
 import 'package:hearth/utils/colors.dart';
 import 'package:hearth/utils/text_style.dart';
 
-class SignInScreen extends StatefulWidget {
-  const SignInScreen({super.key});
+class LogInScreen extends StatefulWidget {
+  const LogInScreen({super.key});
 
   @override
-  State<SignInScreen> createState() => _SignInScreenState();
+  State<LogInScreen> createState() => _LogInScreenState();
 }
 
-class _SignInScreenState extends State<SignInScreen> {
+class _LogInScreenState extends State<LogInScreen> {
   @override
   Widget build(BuildContext context) {
-       final inputBorder = OutlineInputBorder(
+      final inputBorder = OutlineInputBorder(
       borderRadius: BorderRadius.circular(12),
       borderSide:  BorderSide(color: Colors.grey),
     );
@@ -33,9 +33,9 @@ class _SignInScreenState extends State<SignInScreen> {
                 child: Image(image: AssetImage("assets/images/small_logo.png")),
               ),
               SizedBox(height: 48.6),
-              Text("Create an account",style: HeaderText ),
+              Text("Log in to continue",style: HeaderText ),
               SizedBox(height: 16),
-              Text( "Start your easy journey to own a property",style: Header2Text),
+              Text( "Kindly enter your email and password to login to your\naccount",style: Header2Text),
               SizedBox(height: 37),
               Text("Email",style: HintText,),
               SizedBox(height: 8),
@@ -51,47 +51,24 @@ class _SignInScreenState extends State<SignInScreen> {
               SizedBox(height: 8),
               TextField(
                 decoration: InputDecoration(
-                  hintText: "Enter your Password",
+                  hintText: "Password",
                   border: inputBorder,
                   prefixIcon: Icon(Icons.lock_outline_rounded),
+                  suffixIcon: Icon(Icons.remove_red_eye_outlined)
                 ),
               ),
-              SizedBox(height: 16),
-              Text("Confirm Password",style: HintText,),
-              SizedBox(height: 8),
-              TextField(
-                decoration: InputDecoration(
-                  hintText: "Re-enter your Password",
-                  border: inputBorder,
-                  prefixIcon: Icon(Icons.lock_outline_rounded),
-                ),
-              ),
-              SizedBox(height: 16),
+              SizedBox(height: 8,),
               Row(
+                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  Checkbox(value: false, onChanged: (value) {}),
-                  Expanded(
-                    child: RichText(
-                      text:  TextSpan(
-                        text: "By signing up, you agree to our ",
-                        style: TextStyle(color: Colors.black),
-                        children: [
-                          TextSpan(
-                            text: "Terms and Conditions",
-                            style: TextStyle(color: primaryColor),
-                          ),
-                          TextSpan(text: " and "),
-                          TextSpan(
-                            text: "Privacy Policy",
-                            style: TextStyle(color: primaryColor),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
+                  TextButton(onPressed:
+                  (){
+                    Get.to(()=>ForgotPasswordScreen());
+                  }
+                  , child: Text("Forgot Password?",style: TextStyle(color: primaryColor,fontSize: 14,decoration: TextDecoration.underline) ,))
                 ],
               ),
-              SizedBox(height: 32),
+              SizedBox(height: 33),
               SizedBox(
                 width: double.infinity,
                 height: 50,
@@ -103,9 +80,9 @@ class _SignInScreenState extends State<SignInScreen> {
                     ),
                   ),
                   onPressed: () {
-                    Get.to(()=> VerificationScreen());
+                  //  Get.to(()=> VerificationScreen());
                   },
-                  child: Text("Sign up"),
+                  child: Text("Log in"),
                 ),
               ),
               SizedBox(height: 24,),
@@ -142,12 +119,12 @@ class _SignInScreenState extends State<SignInScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text("Already a member?",style: Header2Text,),
+                  Text("Don't have an account?",style: Header2Text,),
                   TextButton(onPressed: (){
-                     Get.to(()=>LogInScreen());
-                  }, child: Text("Login",style: TextStyle(color: primaryColor, decoration: TextDecoration.underline),))
+                    Get.to(()=> SignInScreen());
+                  }, child: Text("Create account",style: TextStyle(fontSize: 14,color: primaryColor, decoration: TextDecoration.underline),))
                 ],
-              )
+              ),
             ],
           ),
         ),
