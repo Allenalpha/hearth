@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hearth/utils/colors.dart';
 
+
 TextStyle HeaderText = GoogleFonts.inter(
   fontSize: 28,
   fontWeight: FontWeight.w600,
@@ -124,8 +125,6 @@ TextStyle Body12Text = GoogleFonts.inter(
   fontWeight: FontWeight.w900,
   color: Color(0xffffffff) ,
 );
-
-
 
 
 

@@ -23,10 +23,10 @@ class MyTextFieldTheme {
     errorStyle: const TextStyle().copyWith(
       fontSize: 16,
       fontFamily: "regular",
-      color: const Color(0xFFDB3022),
+      color: const Color(0xFFE33629),
     ),
     enabledBorder: const OutlineInputBorder().copyWith(
-      borderSide: const BorderSide(
+      borderSide: BorderSide(
         width: 1,
         color: strokeColor,
       ),
@@ -42,7 +42,7 @@ class MyTextFieldTheme {
     errorBorder: const OutlineInputBorder().copyWith(
       borderSide: const BorderSide(
         width: 1,
-        color: Color(0xFFDB3022),
+        color: Color(0xFFE33629),
       ),
       borderRadius: BorderRadius.circular(16.0),
     ),
