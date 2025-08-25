@@ -131,6 +131,7 @@ TextStyle Body12Text = GoogleFonts.inter(
 
 
 
+
 // {
 //   FontWeight.w100: 'Thin',
 //   FontWeight.w200: 'ExtraLight',
