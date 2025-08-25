@@ -16,7 +16,6 @@ class _IntroScreenState extends State<IntroScreen> {
   @override
   void initState() {
     super.initState();
-    // Navigate after 3 seconds
     Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
