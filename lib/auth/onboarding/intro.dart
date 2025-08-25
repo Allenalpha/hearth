@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hearth/auth/onboarding/onboarding.dart';
-
 import 'package:hearth/utils/colors.dart';
 
 
