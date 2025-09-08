@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:hearth/reuseable_widgets/custom_back_button.dart';
 import 'package:hearth/reuseable_widgets/custom_popup.dart';
+import 'package:hearth/ui/home/home.dart';
 import 'package:hearth/utils/colors.dart';
 import 'package:hearth/utils/text_style.dart';
 import 'package:pinput/pinput.dart';
@@ -89,7 +90,7 @@ class _VerificationScreenState extends State<VerificationScreen> {
                       return CustomPopup(title: "Account Created Successfully", 
                       subtitle: "Welcome aboard! Your account is set up and ready to go."
                      , onPressed: (){
-                       Get.to(()=>());
+                       Get.to(()=> HomeScreen());
                      },
                       );
                     },

@@ -40,6 +40,7 @@ dependencies:
   modal_bottom_sheet: ^3.0.0
   dropdown_button2: ^2.3.9
   introduction_screen: ^3.1.17
+  iconsax_flutter: ^1.0.1
 
 dev_dependencies:
   flutter_test:

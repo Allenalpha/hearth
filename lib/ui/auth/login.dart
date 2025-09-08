@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:hearth/ui/auth/forgot_password.dart';
 import 'package:hearth/ui/auth/signin.dart';
+import 'package:hearth/ui/home/home.dart';
 import 'package:hearth/utils/colors.dart';
 import 'package:hearth/utils/text_style.dart';
 
@@ -80,7 +81,7 @@ class _LogInScreenState extends State<LogInScreen> {
                     ),
                   ),
                   onPressed: () {
-                  //  Get.to(()=> VerificationScreen());
+                    Get.to(()=> HomeScreen());
                   },
                   child: Text("Log in"),
                 ),
