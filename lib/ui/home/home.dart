@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 import 'package:hearth/ui/category/Lease.dart';
+import 'package:hearth/ui/category/apartment.dart';
+import 'package:hearth/ui/category/land.dart';
 import 'package:hearth/ui/category/rental.dart';
 import 'package:hearth/utils/colors.dart' as AppColors;
 import 'package:hearth/utils/colors.dart';
@@ -118,13 +120,13 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 GestureDetector(
                   onTap: (){
-                    Get.to(()=>());
+                    Get.to(()=>LandScreen());
                   },
                   child: CategoryButton(icon: Icons.landscape, label: "Land"),
                 ),
                 GestureDetector(
                   onTap: (){
-                    Get.to(()=>());
+                    Get.to(()=>ApartmentScreen());
                   },
                   child: CategoryButton(icon: Icons.business, label: "Commercial"),
                 ),
