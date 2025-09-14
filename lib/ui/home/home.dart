@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_navigation/get_navigation.dart';
+import 'package:hearth/ui/category/Lease.dart';
 import 'package:hearth/utils/colors.dart' as AppColors;
 import 'package:hearth/utils/colors.dart';
 import 'package:hearth/utils/custom_themes.dart/constants.dart' hide primaryColor;
@@ -99,11 +102,31 @@ class _HomeScreenState extends State<HomeScreen> {
             const SizedBox(height: 17),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: const [
-                CategoryButton(icon: Icons.apartment, label: "Rentals", ),
-                CategoryButton(icon: Icons.hotel, label: "Hotels"),
-                CategoryButton(icon: Icons.landscape, label: "Land"),
-                CategoryButton(icon: Icons.business, label: "Commercial"),
+              children:  [
+                GestureDetector(
+                  onTap: (){
+                    Get.to(()=>LeaseScreen());
+                  },
+                  child: CategoryButton(icon: Icons.apartment, label: "Rentals"),
+                ),
+                GestureDetector(
+                  onTap: (){
+                    Get.to(()=>());
+                  },
+                  child: CategoryButton(icon: Icons.hotel, label: "Hotels"),
+                ),
+                GestureDetector(
+                  onTap: (){
+                    Get.to(()=>());
+                  },
+                  child: CategoryButton(icon: Icons.landscape, label: "Land"),
+                ),
+                GestureDetector(
+                  onTap: (){
+                    Get.to(()=>());
+                  },
+                  child: CategoryButton(icon: Icons.business, label: "Commercial"),
+                ),
               ],
             ),
             const SizedBox(height: 25),

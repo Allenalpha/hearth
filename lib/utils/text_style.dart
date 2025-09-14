@@ -126,6 +126,15 @@ TextStyle Body12Text = GoogleFonts.inter(
   color: Color(0xffffffff) ,
 );
 
+TextStyle TitleText = GoogleFonts.inter(
+  fontSize: 11,
+  fontWeight: FontWeight.w600,
+  color: Color(0xff0D1B5C)
+
+); 
+
+
+
 
 
 
