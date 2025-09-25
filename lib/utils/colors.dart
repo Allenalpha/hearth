@@ -46,6 +46,8 @@ const Color locationBlack = Color(0xff1C1B1F);
 
 const Color input2Grey = Color(0xffbbbbbb);
 
+const Color dividerColor = Color(0xffF7F6F6);
+
 
 
 
