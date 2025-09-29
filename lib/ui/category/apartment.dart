@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/get_navigation.dart';
+import 'package:hearth/ui/property_details/apartment_property_details.dart';
 import 'package:hearth/utils/colors.dart';
 import 'package:hearth/utils/text_style.dart';
 
@@ -82,7 +83,7 @@ class _ApartmentScreenState extends State<ApartmentScreen> {
                   final property = properties[index];
                   return InkWell(
                     onTap:(){
-                    //  Get.to(()=>PropertyDetailScreen(property:property));
+                     Get.to(()=>ApartmentPropertyDetailsScreen(property:property));
                     },
                     child: Container(
                       decoration: BoxDecoration(
