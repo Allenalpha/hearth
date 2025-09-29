@@ -146,16 +146,19 @@ class _ApartmentPropertyDetailsScreenState extends State<ApartmentPropertyDetail
                 children: [
                   Text("Features",style: TitleText ),
                   SizedBox(height: 12),
-                  Wrap(
-                    spacing: 59,
-                    runSpacing: 12,
+                  GridView.count(
+                    crossAxisCount: 4,
+                    crossAxisSpacing: 16,
+                    physics: NeverScrollableScrollPhysics(),
+                    shrinkWrap: true,
+                    mainAxisSpacing: 16,
                     children: [
                       _buildFeature(Icons.directions_car_outlined, "Car park"  ),
                       _buildFeature(Icons.bedroom_child_outlined , "2 bedroom"),
                       _buildFeature(Icons.kitchen_outlined, "Kitchen"),
+                      _buildFeature(Icons.dining_outlined, "Dining"),
                       _buildFeature(Icons.pool , "Swimming pool"),
                       _buildFeature(Icons.bathtub_rounded , "2 bathroom"),
-                      _buildFeature(Icons.dining_outlined, "Dining"),
                       _buildFeature(Icons.wifi, "Free Wi-Fi"),
                       _buildFeature(Icons.lightbulb_outlined, "24hr power supply"),
                       _buildFeature(Icons.wb_sunny_outlined , "Rooftop view"),
