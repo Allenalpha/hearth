@@ -126,6 +126,39 @@ TextStyle Body12Text = GoogleFonts.inter(
   color: Color(0xffffffff) ,
 );
 
+TextStyle TitleText = GoogleFonts.inter(
+  fontSize: 11,
+  fontWeight: FontWeight.w600,
+  color: Color(0xff0D1B5C)
+
+); 
+
+TextStyle PriceText = GoogleFonts.inter(
+  fontSize: 10,
+  fontWeight: FontWeight.w400,
+  color: Color(0xff7d7d7d)
+);
+
+TextStyle Price2Text = GoogleFonts.inter(
+  fontSize: 10,
+  fontWeight: FontWeight.w500,
+  color: Color(0xff0D1B5C)
+);
+
+
+TextStyle Price3Text = GoogleFonts.inter(
+  fontSize: 11,
+  fontWeight: FontWeight.w500,
+  color: Color(0xff0D1B5C)
+);
+
+TextStyle Button3Text = GoogleFonts.inter(
+  fontSize: 14,
+  fontWeight: FontWeight.w500,
+  color: primaryColor
+);
+
+
 
 
 
