@@ -152,6 +152,7 @@ class _SalePropertyDetailsScreenState extends State<SalePropertyDetailsScreen> {
                       _buildFeature(Icons.directions_car_outlined, "Car park"  ),
                       _buildFeature(Icons.bedroom_child_outlined , "4 bedroom"),
                       _buildFeature(Icons.pool , "Swimming pool"),
+                      _buildFeature(Icons.dining_outlined, "Dining"),
                       _buildFeature(Icons.bathtub_rounded , "5 bathroom"),
                       _buildFeature(Icons.store, "1 store room"),
                     ],
