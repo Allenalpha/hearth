@@ -40,7 +40,12 @@ const Color lightGreen = Color(0xff0B5C0D);
 
 const Color appWhite = Color(0xffffffff);
 
+const Color cardBlue = Color(0xff0D1B5C);
+
+const Color locationBlack = Color(0xff1C1B1F);
+
 const Color input2Grey = Color(0xffbbbbbb);
+
 
 
 
