@@ -1,7 +1,9 @@
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:hearth/reuseable_widgets/custom_back_button.dart';
+import 'package:hearth/ui/auth/forgot_password_two.dart';
 import 'package:hearth/ui/auth/reset_complete.dart';
 import 'package:hearth/utils/colors.dart';
 import 'package:hearth/utils/text_style.dart';
@@ -40,6 +42,7 @@ class _ForgotPasswordTwoScreenState extends State<ForgotPasswordTwoScreen> {
                   hintText: "New password",
                   border: inputBorder,
                   prefixIcon: Icon(Icons.lock_outline_rounded),
+                  suffixIcon: Icon(Icons.remove_red_eye_outlined)
                 ),
               ),
               SizedBox(height: 16,),
@@ -48,9 +51,10 @@ class _ForgotPasswordTwoScreenState extends State<ForgotPasswordTwoScreen> {
                   hintText: "Confirm password",
                   border: inputBorder,
                   prefixIcon: Icon(Icons.lock_outline_rounded),
+                  suffixIcon: Icon(Icons.remove_red_eye_outlined)
                 ),
               ),
-              SizedBox(height:428,),
+              SizedBox(height:387 ,),
               SizedBox(
                 width: double.infinity,
                 height: 50,

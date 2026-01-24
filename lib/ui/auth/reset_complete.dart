@@ -44,7 +44,8 @@ class _ResetCompleteScreenState extends State<ResetCompleteScreen> {
               )
              ],
            ),
-         ) ),
+         )
+       ),
     );
   }
 }
